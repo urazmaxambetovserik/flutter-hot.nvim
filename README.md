@@ -27,7 +27,7 @@ flutter run --pid-file /tmp/flutter.pid
 {
   "urazmaxambetovserik/flutter-hot.nvim",
   config = function()
-    require("flutter_reload").setup()
+    require("flutter_hot").setup()
   end,
 }
 ```
