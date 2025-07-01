@@ -39,10 +39,8 @@ local function handle_action(action)
 
 	if action == "reload" then
 		send_signal(pids, "USR1")
-		vim.notify("[flutter-hot] Hot Reload triggered", vim.log.levels.INFO)
 	elseif action == "restart" then
 		send_signal(pids, "USR2")
-		vim.notify("[flutter-hot] Hot Restart triggered", vim.log.levels.INFO)
 	else
 		vim.notify("[flutter-hot] Unknown action: " .. action, vim.log.levels.ERROR)
 	end
