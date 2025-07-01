@@ -23,9 +23,6 @@ end
 local function send_signal(pids, signal)
 	for _, pid in ipairs(pids) do
 		local ok, _, code = os.execute("kill -" .. signal .. " " .. pid)
-		if not ok or code ~= 0 then
-			vim.notify("Failed to send signal to PID " .. pid, vim.log.levels.ERROR)
-		end
 	end
 end
 
