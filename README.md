@@ -1,4 +1,4 @@
-# nvim-flutter-hot
+# flutter-hot.nvim
 
 Neovim plugin to trigger Flutter **Hot Reload** and **Hot Restart** directly from the editor, without external scripts.
 
